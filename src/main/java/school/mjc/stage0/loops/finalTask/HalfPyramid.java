@@ -5,10 +5,13 @@ public class HalfPyramid {
         int i;
         int j;
         for (i=1; i <=cathetusLength; i++){
-         for (j=i; j>0; j--){
-          System.out.print("*");
-             System.out.print(" ");
+         for (j=2*(cathetusLength-i) ; j>0; j--){
+          System.out.print(" ");
+         }
+            for (j=0; j<i; j++){
+                System.out.print("* ");
              
+                  
          }
            System.out.println(); 
         }
